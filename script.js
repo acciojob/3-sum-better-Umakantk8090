@@ -10,9 +10,11 @@ function threeSum(arr, target) {
 				let sum=arr[i] + arr[j] + arr[k];
 				let diff = Math.abs(sum - target);
 				if(initialDiff > diff)
+					ans = sum;
 			}
 		}
 	}
+	console.log(ans);
   
 }
 
